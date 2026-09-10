@@ -1,0 +1,9 @@
+# ---- 核心依赖（Mock 模式也必需） ----
+pydantic>=2.5.0
+langchain-core>=0.3.0
+python-docx>=1.1.0      # 解析 .docx
+pypdf>=4.0.0            # 解析 .pdf
+
+# ---- 接入真实大模型时才需要（mock 模式下不 import，可不装） ----
+# 只要目标服务兼容 OpenAI 协议（OpenAI / DeepSeek / 通义 / vLLM / Ollama 等）都能用
+langchain-openai>=0.2.0
